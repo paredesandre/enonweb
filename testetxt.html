@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Gravar Dados no Arquivo</title>
+</head>
+<body>
+
+<form id="meuFormulario">
+    <label>Empresa:</label><br>
+    <input type="text" id="empresa"  name="empresa" required><br><br>
+
+    <label>Serviço:</label><br>
+    <input type="text" id="servico" name="servico" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" id="email" required><br><br>
+
+    <label>Mensagem:</label><br>
+    <textarea name="message" id="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Gravar</button>
+</form>
+
+<script>
+document.getElementById("meuFormulario").addEventListener("submit", function(event){
+    event.preventDefault(); 
+
+    // Coleta dos valores
+    const empresa = document.getElementById("empresa").value;
+    const servico = document.getElementById("servico").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Conteúdo do arquivo
+    const conteudo = 
+`Empresa: ${empresa}
+Serviço: ${servico}
+Email: ${email}
+Mensagem: ${message}
+--------------------------
+`;
+
+    // Cria o blob e força download
+    const blob = new Blob([conteudo], { type: "text/plain" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    
+    // Nome do arquivo
+    link.download = "dados_formulario.txt";
+    link.click();
+});
+</script>
+
+</body>
+</html>
