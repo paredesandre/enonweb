@@ -222,16 +222,16 @@
 
  </style>
 
-    <title>EnonWeb Soluções Digitais</title>                                 
+    <title>EnonWeb Soluções Digitais - Contato</title>                                 
 
 </head>
 <body >
   
 <header>
     <div class="container topbar">
-      <div class="brand" >
+      <div class="brand">
         <!-- Substitua o src por sua logo quando enviar: ex: logo.png -->
-        <img id="brand-logo" src="logo.jpg" alt="Sua Logo (coloque arquivo logo.png)"  />
+        <img id="brand-logo" src="logo.jpg" alt="Sua Logo (coloque arquivo logo.png)" />
         <div>
           <div class="title">EonWeb Soluções Digitais</div>
           <div class="muted" style="font-size:12px">Transformamos ideias em produtos digitais</div>
@@ -240,12 +240,10 @@
 
       <nav aria-label="menu" >
         <a href="index.html">Home</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Quem somos</a>
-        <a href="contato.html">Contato</a>
+        <a href="contato.html">Contato </a>
         <a href="produtos.html">Produtos</a>
         <a href="produtos.pdf" target="_blank">PDF</a>
-        <a href="orcamento.html" class="botao-link"> Solicitar Orçamento </a>
+       
 
 
       </nav>
@@ -257,140 +255,44 @@
   
 <main class="container">
  
+    <section class="mt-5" id="orcamento">
+        <h2>Orcamento</h2>
+        <div class="card" >
+          <form class="contact-form" action="https://formsubmit.co/joaoandre4167@gmail.com" method="POST">
+                  <div>
+                     <label for="empresa" style="font-size:20px;">Empresa / Projeto</label>
+                     <input id="empresa" name="empresa"/>
+  
+                 </div>
+                 <div>
+                     <label for="servico" style="font-size:20px;">Selecione a linha</label>
+                      <select  name="servico" id="servico" style="background-color:beige ;">
+                        <option>Marketing Digital</option>
+                        <option>Desenvolvimento & Aplicativos</option>
+                        <option>E‑commerce & ERPs</option>
+                        <option>Clube de Assinatura</option>
+                        <option>Parcerias</option>
+                      </select>
+                 </div>
+                  <div>
+                      <label for="email" style="font-size:20px;">E-mail</label>
+                      <input type="email" name="email" required>
+                  </div>
+                  <div>
+                      <label for="message" style="font-size:20px;">Mensagem</label>
+                      <input type="text" id="message" name="message" required >
+                  </div>
+                  
+                  <button type="submit" style="font-size:20px;">Send</button>
+                  <input type="hidden" name="_next" value="https://paredesandre.github.io/site//thanks.html">
+                  <input type="hidden" name="_subject" value="New submission!">
+              </form>
+        </div>
+   </section> 
   
 
-  <section class="hero" id="home">
-   
-    <img src="logo_marca.png" width="100%" height="100%" /> 
-      <div>
-        <h1>Tecnologia que impulsiona resultados reais</h1>
-        <p class="lead">Marketing digital, aplicativos, e‑commerce e ERPs, clubes de assinatura e parcerias estratégicas — tudo pensado para escalar seu negócio com tecnologia, design e dados.</p>
+ 
 
-        <div class="features">
-          <div class="feature"><strong>Atuação completa</strong><span class="muted"> — do planejamento à entrega</span></div>
-          <div class="feature"><strong>Times especializados</strong><span class="muted"> — marketing, dev, produto e growth</span></div>
-          <div class="feature"><strong>Resultados mensuráveis</strong><span class="muted"> — ROI, CAC, LTV</span></div>
-        </div>
-      </div>
-       <aside style="position:relative">
-        <div style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;">
-          <h3 style="margin-top:0">Nossas linhas de produtos</h3>
-          <div class="card" style="margin-bottom:8px">
-            <h4 style="color: #0dcaf0;">Marketing Digital</h4>
-            <p class="muted">Estratégia, tráfego pago, SEO, conteúdo e automações para captar e nutrir leads.</p>
-          </div>
-          <div class="card" style="margin-bottom:8px">
-            <h4 style="color: #0dcaf0 ;">Desenvolvimento & Aplicativos</h4>
-            <p class="muted">Aplicativos móveis, APIs e plataformas com foco em performance e experiência.</p>
-          </div>
-          <div class="card" style="margin-bottom:8px">
-            <h4 style="color: #0dcaf0;">E‑commerce & ERPs</h4>
-            <p class="muted">Lojas integradas, soluções de gestão e integrações com pagamento e logística.</p>
-          </div>
-          <div class="card" style="margin-bottom:8px">
-            <h4 style="color:  #0dcaf0;">Clube de Assinatura</h4>
-            <p class="muted">Modelos de retenção, recorrência e funis específicos para assinaturas.</p>
-          </div>
-          <div class="card">
-            <h4 style="color:  #0dcaf0;">Parcerias</h4>
-            <p class="muted">Programas de parceria estratégica para ampliar alcance e capacidades.</p>
-          </div>
-        </div>
-      </aside>
-  </section>
-  
-  <section id="servicos">
-      <h2>Detalhamento das Linhas</h2>
-      <div class="lines">
-        <div class="card">
-          <h3 style="color:  #0dcaf0;">Marketing Digital</h3>
-          <p class="muted">É o conjunto de estratégias usadas na internet para divulgar produtos, 
-            serviços ou marcas. Ele envolve ações como criar posts nas redes sociais, anunciar no Google,
-             enviar e-mails, produzir conteúdo e usar sites ou aplicativos para atrair e conquistar clientes.
-            Planejamento de marca, campanhas pagas (Google, Meta), marketing de conteúdo, automação e análise de dados.</p>
-        </div>
-        <div class="card">
-          <h3 style="color: #0dcaf0;">Desenvolvimento & Aplicativos</h3>
-          <p class="muted">Desenvolvimento de aplicativos é o processo de criar programas que funcionam
-             em celulares, tablets ou computadores. São aqueles apps que você usa todos os dias — como WhatsApp,
-             Instagram, bancos, jogos e aplicativos de delivery. Desenvolver aplicativos é transformar uma ideia
-             em um app que funciona no celular ou computador, através de design, programação e testes. Desenvolvemos
-             apps nativos e híbridos, plataformas web escaláveis, integrações e manutenção contínua.</p>
-        </div>
-        <div class="card">
-          <h3 style="color:  #0dcaf0">E‑commerce & ERPs</h3>
-          <p class="muted" >O que é E-commerce? E-commerce é uma loja virtual, ou seja, vendas feitas pela
-             internet.É como ter uma loja aberta 24 horas, onde o cliente pode ver produtos, comprar, pagar
-             e receber em casa — tudo online. O que é ERP? É um sistema de gestão que ajuda a organizar toda
-             a empresa em um só lugar. Ele controla estoque, vendas, finanças, notas fiscais, clientes, fornecedores,
-             relatórios e muito mais. Implementamos de lojas virtuais, integração com ERPs, meios de pagamento e soluções 
-             de logística.</p>
-        </div>
-        <div class="card">
-          <h3 style="color:  #0dcaf0;">Clube de Assinatura</h3>
-          <p class="muted">É um serviço onde a pessoa paga um valor fixo por mês (ou por período) para 
-            receber produtos ou conteúdos de forma contínua — como caixas surpresa, cursos, serviços digitais,
-            etc. Estratégias de aquisição São as ações para atrair novos assinantes, como anúncios, promoções, 
-            ofertas de teste grátis e comunicação clara sobre os benefícios.Estratégias de retenção São as práticas
-            para manter os assinantes por mais tempo, como boa experiência, conteúdos exclusivos, suporte rápido e
-            vantagens para quem permanece.Gestão de assinantes É o conjunto de processos para acompanhar quem assina, 
-            quem cancela, quem precisa de suporte, além de atualizar informações e oferecer planos diferentes.Infraestrutura
-            para cobrança recorrente São as ferramentas e sistemas que permitem cobrar automaticamente todo mês, emitir 
-            notas, controlar pagamentos, evitar falhas de cobrança e manter tudo funcionando sem complicações.</p>
-        </div>
-        <div class="card">
-          <h3 style="color:  #0dcaf0">Parcerias</h3>
-          <p class="muted">No contexto de negócios digitais, Parcerias são colaborações estratégicas entre
-             empresas para oferecer produtos, serviços ou soluções melhores, mais completas e com maior alcance.
-             Programas Co-brand - Duas marcas aparecem juntas em um serviço ou produto. Exemplo: uma empresa de
-             tecnologia cria uma solução e coloca sua marca junto com a marca do parceiro que ajuda a distribuir 
-             ou vender. White-label - Uma empresa cria o produto, mas o parceiro pode usar a própria marca nele.
-             Exemplo simples: você compra uma plataforma pronta e vende como se fosse sua, com seu nome, suas cores
-             e sua identidade. Integrações com parceiros tecnológicos e comerciais Conectar sistemas ou serviços 
-             diferentes para funcionar juntos. Exemplo: integrar um sistema de pagamentos, uma plataforma de e-commerce
-             ou um ERP com o seu produto, oferecendo uma experiência completa para o cliente.</p>
-        </div>
-      </div>
-  </section>
-   <section id="sobre" class="about">
-     <h1>Sobre a EnonWeb  </h1><br>
-      <span> A EnonWeb Soluções Digitais é especialista em Transformação Digital para Empresas,
-         oferecendo  soluções completas e personalizadas 
-      </span>
-  <div class="faq">
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Quem Somos </span>
-        <span class="arrow">▶</span>
-      </div>
-      <div class="faq-answer">
-        <p>Empresa especializada em soluções digitais, equipe de profissionais qualificados, experiência no
-          mercado digital, foco em resultados, atendimento personalizado e suporte continuo .</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Nossa Missão </span>
-        <span class="arrow">▶</span>
-      </div>
-      <div class="faq-answer">
-        <p>Transformar Negócios através da tecnologia, oferecer soluções digitais acessíveis, 
-          garantir resultados mensuráveis, promover inovação constante, facilitar o crescimento dos Clientes .</p>
-      </div>
-    </div>
-     <div class="faq-item">
-      <div class="faq-question">
-        <span>Nossa Valores </span>
-        <span class="arrow">▶</span>
-      </div>
-      <div class="faq-answer">
-        <p>Inovação, Qualidade, Compromisso, Transparência, Resultados, Parceria .</p>
-      </div>
-    </div>
-  </div>
-
-</section>
-  
  
     <footer style="margin-top:80px">
       <div class="muted">© <span id="year"></span> EonWeb Soluções Digitais — Todos os direitos reservados.</div>
@@ -398,39 +300,6 @@
    
 </main>
 <!-- Banner de Cookies -->
-    <div id="cookie-banner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <p>Nós utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
-                   <a href="politica-privacidade.html" class="cookie-link">Política de Privacidade</a>. 
-                 
-                </p>
-            </div>
-            <div class="cookie-buttons">
-                <button class="cookie-btn settings-btn" onclick="openSettings()">Configurações</button>
-                <button class="cookie-btn reject-btn" onclick="rejectCookies()">Rejeitar</button>
-                <button class="cookie-btn accept-btn" onclick="acceptCookies()">Aceitar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal de Configurações (Opcional) -->
-    <div id="cookie-settings" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 1001;">
-        <h3>Configurações de Cookies</h3>
-        <div>
-            <input type="checkbox" id="necessary" checked disabled>
-            <label for="necessary">Cookies Necessários</label>
-        </div>
-        <div>
-            <input type="checkbox" id="analytics">
-            <label for="analytics">Cookies Analíticos</label>
-        </div>
-        <div>
-            <input type="checkbox" id="marketing">
-            <label for="marketing">Cookies de Marketing</label>
-        </div>
-        <button onclick="saveSettings()">Salvar Preferências</button>
-    </div>
 
 <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -573,7 +442,7 @@
 
     function toggleMobile(){
       // simples menu mobile: transforma nav em alert com links (substituir por menu real se desejar)
-      const links = ['Serviços:#servicos','Quem somos:#sobre','Contato:contato.html','Produtos:produtos.html','PDF:produtos.pdf','Orçamento:orcamento.html'];
+      const links = ['Home:index.html','Contato:contato.html','Produtos:produtos.html','PDF:produtos.pdf'];
       const menu = links.map(l=>{
         const [t,h]=l.split(':'); return `<div style="padding:8px 12px"><a href="${h}" onclick="document.querySelector('header').classList.remove('open')">${t}</a></div>`
       }).join('');
